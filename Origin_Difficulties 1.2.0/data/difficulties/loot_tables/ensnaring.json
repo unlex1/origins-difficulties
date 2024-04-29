@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "apoli:add_power",
+                            "slot": "offhand",
+                            "power": "difficulties:ensnaringbook"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                "Ensnaring"
+                            ],
+                            "entity": "this"
+                        }
+                    ],
+                    "type": "minecraft:item",
+                    "name": "enchanted_book"
+                }
+            ]
+        }
+    ]
+}

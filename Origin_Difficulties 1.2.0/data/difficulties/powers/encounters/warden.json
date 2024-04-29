@@ -1,0 +1,35 @@
+{
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:self_glow",
+        "use_teams": false,
+        "red": 1,
+        "green": 0,
+        "blue": 0
+    },
+    "key1": {
+        "type": "origins:modify_attribute",
+        "attribute": "generic.movement_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 1,
+            "name": "fast"
+        }
+    },
+    "key2": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -1,
+            "name": "fairer damage"
+        }
+    },
+    "key3": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:exhaust",
+            "amount": 2
+        },
+        "cooldown": 1
+    }
+}

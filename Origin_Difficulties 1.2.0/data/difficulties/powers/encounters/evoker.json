@@ -1,0 +1,34 @@
+{
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:heal",
+            "amount": 5
+        },
+        "cooldown": 1
+    },
+    "key1": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 1,
+            "name": "tankify"
+        }
+    },
+    "key2": {
+        "type": "origins:self_glow",
+        "use_teams": false,
+        "red": 1,
+        "green": 0,
+        "blue": 0
+    },
+    "key3": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 1,
+            "name": "cannonify"
+        }
+    }
+}

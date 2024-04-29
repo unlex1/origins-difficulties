@@ -1,0 +1,34 @@
+{
+    "name": "Ensnaring",
+    "hidden": true,
+    "type": "origins:target_action_on_hit",
+    "damage_condition": {
+        "type": "origins:projectile",
+        "projectile": "arrow"
+    },
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "slowness",
+                    "duration": 100,
+                    "amplifier": 6,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            },
+            {
+                "type": "origins:spawn_entity",
+                "entity_type": "evoker_fangs"
+            },
+            {
+                "type": "origins:grant_power",
+                "power": "difficulties:ensnaring2",
+                "source": "difficulties:masochist"
+            }
+        ]
+    },
+    "cooldown": 100
+}

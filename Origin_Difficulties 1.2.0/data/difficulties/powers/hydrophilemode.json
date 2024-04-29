@@ -1,0 +1,27 @@
+{
+    "name": "Hydrophile Changes",
+    "description": "- Can only breathe underwater",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "All hydrophobic origins have their hydrophobia removed.",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "hurt_by_water"
+        },
+        "modifier": {
+            "operation": "set_total",
+            "value": 0,
+            "name": "Hydrophobia Immunity"
+        }
+    },
+    "key1": {
+        "type": "origins:ignore_water"
+    }
+}

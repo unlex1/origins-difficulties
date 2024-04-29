@@ -1,0 +1,12 @@
+{
+    "pack": {
+        "name": "Origin_Difficulties",
+        "id": "difficulties",
+        "pack_format": 18,
+        "version": "1.0.0",
+        "authors": [
+            "Unlex"
+        ],
+        "description": "Adds more difficulties to the origins mod!"
+    }
+}

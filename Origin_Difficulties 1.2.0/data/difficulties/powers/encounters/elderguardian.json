@@ -1,0 +1,40 @@
+{
+    "name": "Elder Guardian Boss",
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 1,
+            "name": "one tanky fucker"
+        }
+    },
+    "key2": {
+        "type": "origins:modify_swim_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -1,
+            "name": "one speedy fucker"
+        }
+    },
+    "key3": {
+        "type": "origins:self_glow",
+        "use_teams": false,
+        "red": 1,
+        "green": 0,
+        "blue": 0
+    },
+    "key5": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:spawn_entity",
+            "entity_type": "minectaft:guardian",
+            "entity_action": {
+                "type": "origins:grant_power",
+                "power": "difficulties:encounters/elderguardian",
+                "source": "difficulties:masochist"
+            }
+        },
+        "cooldown": 1
+    }
+}

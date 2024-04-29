@@ -1,0 +1,30 @@
+{
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 1,
+            "name": "tanky"
+        }
+    },
+    "key1": {
+        "type": "origins:climbing",
+        "allow_holding": true
+    },
+    "key2": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:set_on_fire",
+            "duration": 100
+        },
+        "cooldown": 1
+    },
+    "key3": {
+        "type": "origins:self_glow",
+        "use_teams": false,
+        "red": 1,
+        "green": 0,
+        "blue": 0
+    }
+}

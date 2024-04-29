@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                "Soul Sight"
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "apoli:add_power",
+                            "slot": "offhand",
+                            "power": "difficulties:soulsightbook"
+                        }
+                    ],
+                    "type": "minecraft:item",
+                    "name": "enchanted_book"
+                }
+            ]
+        }
+    ]
+}

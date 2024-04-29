@@ -1,0 +1,15 @@
+[
+    {
+        "function": "apoli:add_power",
+        "slot": "mainhand",
+        "power": "difficulties:ensnaring"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+            "Ensnaring"
+        ],
+        "entity": "this",
+        "replace": true
+    }
+]

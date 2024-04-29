@@ -1,0 +1,15 @@
+[
+    {
+        "function": "apoli:add_power",
+        "slot": "head",
+        "power": "difficulties:soulsight"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+            "Soul Sight"
+        ],
+        "entity": "this",
+        "replace": true
+    }
+]

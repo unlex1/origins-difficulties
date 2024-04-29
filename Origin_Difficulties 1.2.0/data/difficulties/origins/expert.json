@@ -1,0 +1,14 @@
+{
+    "name": "Expert Mode",
+    "description": "For experienced players.",
+    "powers": [
+        "difficulties:expertmode",
+        "difficulties:voidslash"
+    ],
+    "icon": {
+        "item": "minecraft:ender_eye",
+        "amount": 1
+    },
+    "order": 2,
+    "impact": 2
+}

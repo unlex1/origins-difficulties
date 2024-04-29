@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "apoli:add_power",
+                            "slot": "mainhand",
+                            "power": "difficulties:witheringshot"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "color": "dark_gray",
+                                "bold": true,
+                                "italic": true,
+                                "underlined": true,
+                                "text": "Withering Shot"
+                            },
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                "Masochist Mode Only!",
+                                "Right click whilst holding this to shoot a burst of skulls."
+                            ],
+                            "entity": "this"
+                        }
+                    ],
+                    "type": "minecraft:item",
+                    "name": "iron_horse_armor"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Hydrophile",
+    "description": "For those particularly stinky people that REALLY love the water, this origin can turn any into an aquatic origin!",
+    "powers": [
+        "difficulties:hydrophilemode",
+        "origins:water_breathing"
+    ],
+    "icon": {
+        "item": "minecraft:heart_of_the_sea",
+        "amount": 1
+    },
+    "order": 4,
+    "impact": 3
+}

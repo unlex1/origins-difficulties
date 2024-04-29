@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                "Reaching"
+                            ],
+                            "entity": "this"
+                        },
+                        {
+                            "function": "apoli:add_power",
+                            "slot": "offhand",
+                            "power": "difficulties:reachingbook"
+                        }
+                    ],
+                    "type": "minecraft:item",
+                    "name": "enchanted_book"
+                }
+            ]
+        }
+    ]
+}

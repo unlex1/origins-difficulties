@@ -1,0 +1,29 @@
+{
+    "name": "Expert Mode Changes",
+    "description": "- Take 1.25x damage from all sources \n\n- Exhaust 1.5x faster\n\n- Heal 25% less health.",
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 1.25,
+            "name": "Take more damage"
+        }
+    },
+    "key1": {
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 1.5,
+            "name": "Exhaust faster"
+        }
+    },
+    "key2": {
+        "type": "origins:modify_healing",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.75,
+            "name": "Heal Slower"
+        }
+    }
+}

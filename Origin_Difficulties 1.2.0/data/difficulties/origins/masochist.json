@@ -1,0 +1,15 @@
+{
+    "name": "Masochist Mode",
+    "description": "For those looking to make their minecraft experience truly hellish.",
+    "powers": [
+        "difficulties:masochistmode",
+        "difficulties:masochistloottables",
+        "difficulties:itemonitem",
+        "difficulties:randomencounters"
+    ],
+    "icon": {
+        "item": "minecraft:end_crystal"
+    },
+    "order": 3,
+    "impact": 3
+}

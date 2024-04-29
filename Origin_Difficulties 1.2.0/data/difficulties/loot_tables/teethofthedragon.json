@@ -1,0 +1,43 @@
+{
+    "type": "minecraft:entity",
+    "functions": [],
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "apoli:add_power",
+                            "slot": "mainhand",
+                            "power": "difficulties:voidslash"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "color": "dark_purple",
+                                "bold": true,
+                                "italic": true,
+                                "underlined": true,
+                                "text": "Dragon's Greatclaw"
+                            },
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                "Masochist Mode Only!",
+                                "Right click holding this to slash through the fabric of reality itself."
+                            ],
+                            "entity": "this"
+                        }
+                    ],
+                    "type": "minecraft:item",
+                    "name": "netherite_sword"
+                }
+            ]
+        }
+    ]
+}

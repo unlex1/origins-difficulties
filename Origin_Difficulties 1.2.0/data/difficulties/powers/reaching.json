@@ -1,0 +1,21 @@
+{
+    "name": "Reaching",
+    "hidden": true,
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:modify_attribute",
+        "attribute": "reach-entity-attributes:reach",
+        "modifier": {
+            "operation": "addition",
+            "value": 2
+        }
+    },
+    "key1": {
+        "type": "origins:modify_attribute",
+        "attribute": "reach-entity-attributes:attack_range",
+        "modifier": {
+            "operation": "addition",
+            "value": 2
+        }
+    }
+}

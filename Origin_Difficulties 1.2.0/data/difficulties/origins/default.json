@@ -1,0 +1,13 @@
+{
+    "name": "Default",
+    "description": "The default difficulty of the world",
+    "powers": [
+        "difficulties:defaultmode"
+    ],
+    "icon": {
+        "item": "minecraft:ender_pearl",
+        "amount": 1
+    },
+    "order": 1,
+    "impact": 1
+}

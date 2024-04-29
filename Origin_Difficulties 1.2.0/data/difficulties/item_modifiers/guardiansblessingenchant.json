@@ -1,0 +1,15 @@
+[
+    {
+        "function": "apoli:add_power",
+        "slot": "chest",
+        "power": "difficulties:guardiansblessing"
+    },
+    {
+        "function": "minecraft:set_lore",
+        "lore": [
+            "Guardian's Blessing"
+        ],
+        "entity": "this",
+        "replace": true
+    }
+]

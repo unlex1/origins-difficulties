@@ -1,0 +1,12 @@
+{
+    "name": "Hardcore",
+    "description": "For those wanting the ultimate minecraft challenge",
+    "powers": [
+        "difficulties:hardcoremode"
+    ],
+    "icon": {
+        "item": "minecraft:nether_star"
+    },
+    "order": 4,
+    "impact": 3
+}

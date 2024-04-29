@@ -1,0 +1,158 @@
+{
+    "name": "Masochist Mode Changes",
+    "description": "- Take 1.5x damage from all sources\n\n- Exhaust 2x as fast\n\n- No natural healing - you can heal by sleeping in a bed, which brings you to full health\n\n- Halved experience gain\n\n- Taking damage has a chance to do very bad things\n\n- Food restores 50% less hunger and saturation\n\n- 50% less lucky\n\n- Minibosses can spawn sometimes when killing an entity\n\n- Bosses and minibosses can drop special items",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "Things taking damage can do include giving the player slowness, giving the player poison, giving the player weakness, setting the player on fire, exploding the player, exhausting the player andspawning a killer bunny on the player",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "type": "origins:multiple",
+    "key0": {
+        "type": "origins:modify_attribute",
+        "attribute": "generic.luck",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.5,
+            "name": "Unlucky"
+        }
+    },
+    "key1": {
+        "type": "origins:disable_regen"
+    },
+    "key2": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 1.5,
+            "name": "More Damage Taken"
+        }
+    },
+    "key3": {
+        "type": "origins:modify_food",
+        "food_modifier": {
+            "operation": "addition",
+            "value": -4,
+            "name": "Less Hunger"
+        },
+        "saturation_modifier": {
+            "operation": "addition",
+            "value": -4,
+            "name": "Less Saturation"
+        }
+    },
+    "key4": {
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.5,
+            "name": "Faster exhaustion"
+        }
+    },
+    "key5": {
+        "type": "origins:modify_xp_gain",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.5,
+            "name": "Less XP"
+        }
+    },
+    "key6": {
+        "type": "origins:action_when_damage_taken",
+        "entity_action": {
+            "type": "origins:chance",
+            "chance": 0.2,
+            "action": {
+                "type": "origins:choice",
+                "actions": [
+                    {
+                        "weight": 1,
+                        "element": {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                                "effect": "slowness",
+                                "duration": 200,
+                                "amplifier": 1,
+                                "show_particles": true,
+                                "show_icon": true
+                            }
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "element": {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                                "effect": "poison",
+                                "duration": 200,
+                                "amplifier": 1,
+                                "show_particles": true,
+                                "show_icon": true
+                            }
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "element": {
+                            "type": "origins:apply_effect",
+                            "effect": {
+                                "effect": "weakness",
+                                "duration": 200,
+                                "amplifier": 1,
+                                "show_particles": true,
+                                "show_icon": true
+                            }
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "element": {
+                            "type": "origins:set_on_fire",
+                            "duration": 200
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "element": {
+                            "type": "origins:explode",
+                            "power": 3,
+                            "destruction_type": "none",
+                            "damage_self": true
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "element": {
+                            "type": "origins:exhaust",
+                            "amount": 5
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "element": {
+                            "type": "origins:spawn_entity",
+                            "entity_type": "minecraft:rabbit",
+                            "tag": "{rabbittype:99}"
+                        }
+                    }
+                ]
+            }
+        },
+        "cooldown": 1
+    },
+    "key7": {
+        "type": "origins:action_on_wake_up",
+        "entity_action": {
+            "type": "origins:heal",
+            "amount": 100
+        }
+    },
+    "key8": {
+        "type": "origins:replace_loot_table",
+        "replace": {
+            "key0": ""
+        },
+        "priority": 0
+    }
+}

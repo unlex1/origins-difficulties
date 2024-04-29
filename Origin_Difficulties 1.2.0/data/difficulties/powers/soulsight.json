@@ -1,0 +1,19 @@
+{
+    "name": "Soul Sight",
+    "description": "soulsight enchant",
+    "hidden": true,
+    "condition": {
+        "type": "origins:origin",
+        "origin": "difficulties:masochist"
+    },
+    "type": "origins:entity_glow",
+    "bientity_condition": {
+        "type": "origins:distance",
+        "comparison": "<=",
+        "compare_to": 50
+    },
+    "use_teams": false,
+    "red": 0,
+    "green": 0,
+    "blue": 1
+}

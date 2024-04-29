@@ -1,0 +1,130 @@
+{
+    "name": "Withering Shot",
+    "description": "The functionality of the Withering Shot ability!",
+    "hidden": true,
+    "type": "origins:multiple",
+    "burst": {
+        "condition": {
+            "type": "origins:origin",
+            "origin": "difficulties:masochist"
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:fire_projectile",
+                    "entity_type": "wither_skull",
+                    "count": 1,
+                    "speed": 1.5,
+                    "divergence": 1,
+                    "projectile_action": {
+                        "type": "origins:spawn_particles",
+                        "particle": "sonic_boom",
+                        "count": 1,
+                        "speed": 1.5
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "block.note_block.basedrum",
+                    "volume": 1,
+                    "pitch": 0.5
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "entity.shulker.shoot",
+                    "volume": 1,
+                    "pitch": 1.7
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:fire_projectile",
+                        "entity_type": "wither_skull",
+                        "count": 1,
+                        "speed": 1.5,
+                        "divergence": 1,
+                        "projectile_action": {
+                            "type": "origins:spawn_particles",
+                            "particle": "sonic_boom",
+                            "count": 1,
+                            "speed": 1.5
+                        }
+                    },
+                    "ticks": 10
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:play_sound",
+                        "sound": "entity.shulker.shoot",
+                        "volume": 1,
+                        "pitch": 1.7
+                    },
+                    "ticks": 10
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:play_sound",
+                        "sound": "block.note_block.basedrum",
+                        "volume": 1,
+                        "pitch": 0.5
+                    },
+                    "ticks": 10
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:fire_projectile",
+                        "entity_type": "wither_skull",
+                        "count": 1,
+                        "speed": 1.5,
+                        "divergence": 1,
+                        "projectile_action": {
+                            "type": "origins:spawn_particles",
+                            "particle": "sonic_boom",
+                            "count": 1,
+                            "speed": 1.5
+                        }
+                    },
+                    "ticks": 20
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:play_sound",
+                        "sound": "entity.shulker.shoot",
+                        "volume": 1,
+                        "pitch": 1.7
+                    },
+                    "ticks": 20
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:play_sound",
+                        "sound": "block.note_block.basedrum",
+                        "volume": 1,
+                        "pitch": 0.5
+                    },
+                    "ticks": 20
+                }
+            ]
+        },
+        "cooldown": 50,
+        "key": {
+            "key": "key.use",
+            "continuous": true
+        }
+    },
+    "witherimmuty": {
+        "condition": {
+            "type": "origins:origin",
+            "origin": "difficulties:masochist"
+        },
+        "type": "origins:effect_immunity",
+        "effect": "wither"
+    }
+}

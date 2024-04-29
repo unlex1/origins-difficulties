@@ -1,0 +1,278 @@
+{
+    "name": "itemonitem",
+    "description": "contains all the methods of enchanting items",
+    "hidden": true,
+    "type": "origins:multiple",
+    "key0": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "difficulties:masochist"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:bow"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "enchanted_book"
+                                }
+                            },
+                            {
+                                "type": "origins:has_power",
+                                "power": "difficulties:ensnaringbook"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "item modify entity @s weapon.mainhand difficulties:ensnaringenchant"
+                },
+                {
+                    "type": "origins:modify_inventory",
+                    "inventory_type": "inventory",
+                    "item_action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    },
+                    "slots": [
+                        "weapon.offhand"
+                    ],
+                    "process_mode": "items",
+                    "limit": 1
+                }
+            ]
+        },
+        "cooldown": 1,
+        "key": {
+            "key": "key.sneak",
+            "continuous": true
+        }
+    },
+    "key1": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "difficulties:masochist"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "axes"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "enchanted_book"
+                                }
+                            },
+                            {
+                                "type": "origins:has_power",
+                                "power": "difficulties:reachingbook"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "item modify entity @s weapon.mainhand difficulties:reachingenchant"
+                },
+                {
+                    "type": "origins:modify_inventory",
+                    "inventory_type": "inventory",
+                    "item_action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    },
+                    "slots": [
+                        "weapon.offhand"
+                    ],
+                    "process_mode": "items",
+                    "limit": 1
+                }
+            ]
+        },
+        "cooldown": 1,
+        "key": {
+            "key": "key.sneak",
+            "continuous": true
+        }
+    },
+    "key2": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "difficulties:masochist"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "difficulties:helmets"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "enchanted_book"
+                                }
+                            },
+                            {
+                                "type": "origins:has_power",
+                                "power": "difficulties:soulsightbook"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "item modify entity @s weapon.mainhand difficulties:soulsightenchant"
+                },
+                {
+                    "type": "origins:modify_inventory",
+                    "inventory_type": "inventory",
+                    "item_action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    },
+                    "slots": [
+                        "weapon.offhand"
+                    ],
+                    "process_mode": "items",
+                    "limit": 1
+                }
+            ]
+        },
+        "cooldown": 1,
+        "key": {
+            "key": "key.sneak",
+            "continuous": true
+        }
+    },
+    "key3": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:origin",
+                    "origin": "difficulties:masochist"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "difficulties:chestplates"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "enchanted_book"
+                                }
+                            },
+                            {
+                                "type": "origins:has_power",
+                                "power": "difficulties:guardiansblessingbook"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "item modify entity @s weapon.mainhand difficulties:guardiansblessingenchant"
+                },
+                {
+                    "type": "origins:modify_inventory",
+                    "inventory_type": "inventory",
+                    "item_action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    },
+                    "slots": [
+                        "weapon.offhand"
+                    ],
+                    "process_mode": "items",
+                    "limit": 1
+                }
+            ]
+        },
+        "cooldown": 1,
+        "key": {
+            "key": "key.sneak",
+            "continuous": true
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "Guardian's Blessing",
+    "description": "gives you conduit power when underwater or something",
+    "hidden": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:origin",
+                "origin": "difficulties:masochist"
+            },
+            {
+                "type": "origins:in_block",
+                "block_condition": {
+                    "type": "origins:block",
+                    "block": "minecraft:water"
+                }
+            }
+        ]
+    },
+    "type": "origins:action_over_time",
+    "interval": 190,
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "conduit_power",
+            "duration": 200,
+            "amplifier": 0,
+            "show_particles": false,
+            "show_icon": false
+        }
+    }
+}

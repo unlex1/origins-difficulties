@@ -1,0 +1,14 @@
+{
+    "order": 2,
+    "origins": [
+        "difficulties:default",
+        "difficulties:expert",
+        "difficulties:masochist",
+        "difficulties:hydrophile",
+        "difficulties:hardcore"
+    ],
+    "enabled": true,
+    "loading_priority": 2,
+    "name": "Difficulty",
+    "allow_random_unchoosable": true
+}

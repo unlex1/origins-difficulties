@@ -1,0 +1,106 @@
+{
+    "hidden": true,
+    "type": "origins:self_action_on_kill",
+    "entity_action": {
+        "type": "origins:chance",
+        "chance": 0.075,
+        "action": {
+            "type": "origins:choice",
+            "actions": [
+                {
+                    "weight": 1,
+                    "element": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_entity",
+                                "entity_type": "minecraft:elder_guardian",
+                                "entity_action": {
+                                    "type": "origins:grant_power",
+                                    "power": "difficulties:encounters/elderguardian",
+                                    "source": "difficulties:masochist"
+                                }
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "entity.lightning_bolt.thunder",
+                                "volume": 1,
+                                "pitch": 0.9
+                            }
+                        ]
+                    }
+                },
+                {
+                    "weight": 1,
+                    "element": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_entity",
+                                "entity_type": "minecraft:evoker",
+                                "entity_action": {
+                                    "type": "origins:grant_power",
+                                    "power": "difficulties:encounters/evoker",
+                                    "source": "difficulties:masochist"
+                                }
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "entity.lightning_bolt.thunder",
+                                "volume": 1,
+                                "pitch": 0.9
+                            }
+                        ]
+                    }
+                },
+                {
+                    "weight": 1,
+                    "element": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_entity",
+                                "entity_type": "minecraft:piglin_brute",
+                                "entity_action": {
+                                    "type": "origins:grant_power",
+                                    "power": "difficulties:encounters/piglin_brute",
+                                    "source": "difficulties:masochist"
+                                }
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "entity.lightning_bolt.thunder",
+                                "volume": 1,
+                                "pitch": 0.9
+                            }
+                        ]
+                    }
+                },
+                {
+                    "weight": 1,
+                    "element": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_entity",
+                                "entity_type": "minecraft:warden",
+                                "entity_action": {
+                                    "type": "origins:grant_power",
+                                    "power": "difficulties:encounters/warden",
+                                    "source": "difficulties:masochist"
+                                }
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "entity.lightning_bolt.thunder",
+                                "volume": 1,
+                                "pitch": 0.9
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "cooldown": 1
+}
